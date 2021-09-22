@@ -27,7 +27,7 @@ namespace Task03
             if (float.TryParse(Console.ReadLine(), out x) && float.TryParse(Console.ReadLine(), out y))
             {
                 Console.WriteLine(G(x, y));
-                return;
+                return; 
             }
             Console.WriteLine("Incorrect input!");
         }

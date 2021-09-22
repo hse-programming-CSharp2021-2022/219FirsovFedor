@@ -17,7 +17,7 @@ namespace Task01
             while (summ % 10 != (summ / 10) % 10 || summ % 10 != summ / 100)
             {
                 summ += i;
-                i++;
+                i++; 
             }
             return Tuple.Create(i, summ);
 

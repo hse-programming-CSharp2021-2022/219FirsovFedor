@@ -21,7 +21,7 @@ namespace Task03
                 Console.WriteLine(G(x, y));
                 return;
             }
-            Console.WriteLine("Incorrect input!");
+            Console.WriteLine("Incorrect input!"); 
         }
     }
 }

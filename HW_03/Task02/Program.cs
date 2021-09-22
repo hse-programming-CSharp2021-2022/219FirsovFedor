@@ -12,7 +12,7 @@ namespace Task01
             return n;
         }
 
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int n;
             int.TryParse(Console.ReadLine(), out n);

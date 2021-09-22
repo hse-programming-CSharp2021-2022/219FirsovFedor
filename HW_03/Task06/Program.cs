@@ -27,7 +27,7 @@ namespace Task03
                 return;
             }
             Console.WriteLine("Incorrect input!");
-        }
+        } 
     }
 }
 

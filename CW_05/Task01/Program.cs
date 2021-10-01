@@ -39,7 +39,7 @@ namespace Task01
             var rand = new Random();
             for (int i = 0; i < n; ++i)
             {
-                line[i] = rand.Next(1, 1000);
+                line[i] = rand.Next(1, 10000);
             }
             Array.Sort(line, comp_1);
             Array.ForEach(line, new Action<int>(Console.WriteLine));

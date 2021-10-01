@@ -46,7 +46,7 @@ namespace Task01
             Console.WriteLine();
             Array.Sort(line, comp_2);
             Array.ForEach(line, new Action<int>(Console.WriteLine));
-            Console.WriteLine();
+            Console.WriteLine(); 
             Array.Sort(line, comp_3);
             Array.ForEach(line, new Action<int>(Console.WriteLine));
             Console.WriteLine();

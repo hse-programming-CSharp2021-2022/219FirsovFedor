@@ -44,8 +44,17 @@ namespace Task01
     {
         static void Main(string[] args)
         {
-            Polygon a = new Polygon(3, 1);
-            Console.WriteLine(a.PolygonData());
+            int n;
+            int.TryParse(Console.ReadLine(), out n);
+            Polygon[] line = new Polygon[n];
+            for (int i = 0; i < n; ++i)
+            {
+                int a;
+                int.TryParse(Console.ReadLine(), out a);
+                int b;
+                int.TryParse(Console.ReadLine(), out b);
+                line[i] = new Polygon(a, b);
+            }
         }
     }
 }

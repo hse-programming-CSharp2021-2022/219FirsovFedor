@@ -55,6 +55,12 @@ namespace Task01
                 int.TryParse(Console.ReadLine(), out b);
                 line[i] = new Polygon(a, b);
             }
+            Console.ForegroundColor = ConsoleColor.Red;
+            for (int i = 0; i < n; ++i)
+            {
+                Console.WriteLine(line[i].p);
+            }
+
         }
     }
 }

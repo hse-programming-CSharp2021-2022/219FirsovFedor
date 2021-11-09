@@ -36,7 +36,7 @@ namespace Task01
         static void Main(string[] args)
         {
             Random rnd = new Random();
-            VidioFile A = new VidioFile(RandName(rnd), rnd.Next(60, 361), rnd.Next(100, 1001));
+            VidioFile A = new VidioFile(RandName(rnd), rnd.Next(60, 361), rnd.Next(100, 1001)); 
             VidioFile[] line = new VidioFile[rnd.Next(5, 16)];
             Console.WriteLine(A);
             for (int i = 0; i < line.Length; ++i)

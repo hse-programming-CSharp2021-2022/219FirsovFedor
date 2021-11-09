@@ -18,7 +18,7 @@ namespace Task01
             private string _name;
             private int _duration;
             private int _quality;
-            public VidioFile(string fir, int sec, int thi)
+            public VidioFile(string fir, int sec, int thi) 
             {
                 _name = fir;
                 _duration = sec;

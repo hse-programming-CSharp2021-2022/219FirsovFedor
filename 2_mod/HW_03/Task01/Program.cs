@@ -9,7 +9,7 @@ namespace Task01
             string name = "";
             for (int i = 0; i < rnd.Next(2, 7); ++i)
             {
-                name += (char)rnd.Next('a', 'z' + 1);
+                name += (char)rnd.Next('a', 'z' + 1); 
             }
             return name;
         }

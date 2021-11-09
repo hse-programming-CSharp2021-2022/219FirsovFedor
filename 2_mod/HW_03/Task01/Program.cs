@@ -48,7 +48,7 @@ namespace Task01
                 }
                 else
                 {
-                    Console.WriteLine('-' + " " + line[i]);
+                    Console.WriteLine('-' + " " + line[i]); 
                 }
             }
 

@@ -40,7 +40,7 @@ namespace TaskAnimal
         {
             Dog dog = new Dog("Tyzik");
 
-            Cow cow = new Cow("Zoriaka", 10);
+            Cow cow = new Cow("Zoriaka", 10); 
             Console.WriteLine(dog.AnimalInfo());
             Console.WriteLine(cow.AnimalInfo());
         }

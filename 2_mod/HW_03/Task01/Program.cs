@@ -4,7 +4,7 @@ namespace Task01
 {
     class Program
     {
-        public static string RandName(Random rnd)
+        public static string RandName(Random rnd) 
         {
             string name = "";
             for (int i = 0; i < rnd.Next(2, 7); ++i)

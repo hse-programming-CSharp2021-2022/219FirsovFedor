@@ -7,22 +7,13 @@ namespace task01
 {
     class Program
     {
-
-        public static void f()
+        class SAS_Exception : Exception
         {
-            try
-            {
-                f();
-            }
-            catch 
-            {
-                Console.WriteLine("Exception_WasThrown");
-            }
+            public SAS_Exception(string msg) : base(msg) { }
         }
-
         static void Main(string[] args)
         {
-            try
+            try // 1-st
             {
                 int a = 1;
                 int b = 0;
@@ -33,7 +24,7 @@ namespace task01
                 Console.WriteLine("Attempted to divide by zero.");
             }
 
-            try
+            try // 2-nd
             {
                 int[] list = new int[1];
                 list[1] = 10;
@@ -46,7 +37,7 @@ namespace task01
 
             string[] buff = { "1", "2"};
             Object[] objs = (Object[])buff;
-            try
+            try // 3-rd
             {
                 Object obj = (Object)13;
                 objs[1] = obj;
@@ -57,9 +48,7 @@ namespace task01
             }
 
 
-
-
-            try
+            try // 4-th
             {
                 int[] d = null;
                 Array.Sort(d);
@@ -69,7 +58,7 @@ namespace task01
                 Console.WriteLine("Value cannot be null.");
             }
 
-            try
+            try // 5-th
             {
                 using (StreamReader sr = new StreamReader("бред какой-то")) { }
             }
@@ -78,7 +67,7 @@ namespace task01
                 Console.WriteLine("Could not find file.");
             }
 
-            try
+            try // 6-th
             {
                 using (StreamReader sr = new StreamReader("1.txt"))
                 {
@@ -93,26 +82,68 @@ namespace task01
                 Console.WriteLine("The process cannot access the file because it is being used by another process.");
             }
 
-            try
+            try // 7-th
             {
                 bool sample = true;
                 IConvertible conv = sample;
                 Char ch = conv.ToChar(null);
             }
-
             catch (System.InvalidCastException)
             {
                 Console.WriteLine("Invalid cast from 'Boolean' to 'Char'");
             }
 
+
+            try // 8-th
+            {
+                 string qwe = "qwe";
+                 Convert.ToInt32(qwe);
+             }
+             catch (System.FormatException)
+             {
+                 Console.WriteLine( "Input string was not in a correct format.");
+             }
+
+
+            try // 9-th
+            {
+                int max = int.MaxValue;
+                int newMax = max * max;
+            }
+            catch (System.OverflowException)
+            {
+                Console.WriteLine("Arithmetic operation resulted in an overflow.");
+            }
+
+            
+            try // 10-th
+            {
+                List<int> i_dont_know_name = new List<int>();
+                for (int i = 0; i < 179; ++i)
+                {
+                    i_dont_know_name.Add(179);
+                }
+                foreach (var elem in i_dont_know_name)
+                {
+                    i_dont_know_name.Add(elem);
+                }
+                int x = i_dont_know_name.Count();
+            }
+            catch (System.InvalidOperationException)
+            {
+                Console.WriteLine("Collection was modified; enumeration operation may not execute.");
+            }
+
             try
             {
-                //f();
+                throw new SAS_Exception("SAS...");
             }
-            catch 
+            catch (SAS_Exception)
             {
-                Console.WriteLine("Exception_WasThrown");
+                Console.WriteLine("SAS's coming...");
             }
+            
+
         }
     }
 }

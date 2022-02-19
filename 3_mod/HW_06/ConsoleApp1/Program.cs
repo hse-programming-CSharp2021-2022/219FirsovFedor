@@ -44,6 +44,12 @@ namespace ConsoleApp1
         {
             return fir.Mid.Distance(new Point(0, 0)) * fir.R < sec.Mid.Distance(new Point(0, 0)) * sec.R;
         }
+        public int CompareTo(Circle other)
+        {
+            if (this < other)
+                return 1;
+            return -1;
+        }
     }
     class Program
     {

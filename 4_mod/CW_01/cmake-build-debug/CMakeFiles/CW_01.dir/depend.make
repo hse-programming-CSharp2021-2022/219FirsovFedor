@@ -5,4 +5,5 @@ CMakeFiles/CW_01.dir/main.cpp.obj: ../2.hpp
 CMakeFiles/CW_01.dir/main.cpp.obj: ../3.hpp
 CMakeFiles/CW_01.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/CW_01.dir/main.cpp.obj: ../task_10.hpp
+CMakeFiles/CW_01.dir/main.cpp.obj: ../task_dop.hpp
 

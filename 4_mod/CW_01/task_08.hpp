@@ -1,6 +1,6 @@
 #include <iostream>
 
-int task_06() {
+int task_08() {
     int data;
     std::cin >> data;
 
